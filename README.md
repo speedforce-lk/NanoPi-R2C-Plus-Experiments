@@ -5,3 +5,12 @@ NanoPi R2C Plus Experiments
 ```
 opkg list-upgradable | cut -f 1 -d ' ' | while IFS='$\n' read -r line; do opkg install $line ; done
 ```
+02. Install OpenVPN
+
+```
+opkg install openvpn-openssl
+```
+
+```
+opkg install luci-app-openvpn
+```
